@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Program</title>
+</head>
+<body>
+    <div id="message"></div>
+
+    <script>
+        // Pre-declared value
+        const number = 10;
+
+        // Function to prompt user and check the value
+        function checkValue() {
+            let userValue = parseInt(prompt("Enter a number:"));
+            
+            while (userValue !== number) {
+                userValue = parseInt(prompt("Oh Not Match!!, try again. Enter a number:"));
+            }
+            
+            alert("Matched! Please access " + number);
+
+            // Display the message in the HTML element
+            document.getElementById('message').innerHTML = "<h1>Welcome For Access This Page</h1>";
+        }
+
+        // Call the function
+        
+        
+        checkValue();
+    </script>
+</body>
+</html>
